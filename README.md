@@ -1,13 +1,20 @@
 # RollTheDie
 
- Small game to roll the twelve-sided die with extentions in editor mode.
+Small game to roll the twelve-sided die with extentions in editor mode.
 
-(Unity editor ver 2022.3.19f1) 
-
-The game allows the user to throw a 12-sided cube (die) onto a table and count the 
+The game allows a user to throw the 12-sided cube (die) onto a table and count the 
 result of the throws.
 
 ![game](https://github.com/SvetlanaArt/RollTheDie/assets/148551551/340de3d4-107a-46b2-ae82-84fd368601c0)
+
+## Ver
+
+Unity editor ver 2022.3.19f1
+
+Assets:
+
+- Text Mesh Pro: TextMeshPro 3.0.6
+- DOTween (HOTween V2)  1.2.765
 
 ## Class Structure
 
