@@ -13,8 +13,9 @@ Unity editor ver 2022.3.19f1
 
 Assets:
 
-- Text Mesh Pro: TextMeshPro 3.0.6
+- Text Mesh Pro 3.0.6
 - DOTween (HOTween V2)  1.2.765
+- UniTask 2.5.3
 
 ## Class Structure
 

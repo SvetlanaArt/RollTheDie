@@ -3,6 +3,7 @@ using DG.Tweening;
 using System.Threading.Tasks;
 using System;
 using System.Collections;
+using Cysharp.Threading.Tasks;
 
 namespace RollTheDie.Die
 {
@@ -57,7 +58,7 @@ namespace RollTheDie.Die
             return new Vector3(force.x, 0, force.y);
         }
 
-        public async Task PickingUp()
+        public async UniTask PickingUp()
         {
             OnPickUp();
             if (!Mathf.Approximately(die.transform.position.y, pickUpPositionY))
@@ -65,10 +66,8 @@ namespace RollTheDie.Die
                 Vector3 upPosition = die.transform.position;
                 upPosition.y += pickUpPositionY;
                 // animation picking up die
-                die.transform.DOMove(upPosition, pickUpDuration)
-                            .SetEase(Ease.OutBack);
-                // delay until animation ends
-                await Task.Delay(TimeSpan.FromSeconds(pickUpDuration));
+                await die.transform.DOMove(upPosition, pickUpDuration)
+                            .SetEase(Ease.OutBack).ToUniTask();
             }
         }
 
